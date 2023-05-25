@@ -21,7 +21,7 @@ VCCから任意のプロジェクトを選択し、「Manage Project」から「
 一覧の中から `IwaSync3ColorChanger` の右にある「＋」ボタンをクリックするか「Installed Vection」から任意のバージョンを選択することで、プロジェクトにインポートします。
 ![image](https://github.com/tp-jp/iwa-sync3-color-changer/assets/130125691/957ef247-86ac-4ebc-9d29-68cd9988f80d)
 
-リポジトリを使わずに導入したい場合は [releases](https://github.com/tp-jp/LightProbeGenerator/releases) から unitypackage をダウンロードして、プロジェクトにインポートしてください。
+リポジトリを使わずに導入したい場合は [releases](https://github.com/tp-jp/iwa-sync3-color-changer/releases) から unitypackage をダウンロードして、プロジェクトにインポートしてください。
 
 ## 使い方
 
