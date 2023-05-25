@@ -1,0 +1,23 @@
+{
+    "name": "com.tp.jp.iwa-sync3-color-changer.Editor",
+    "references": [
+        "VRC.SDK3",
+        "VRC.SDK3.Editor",
+        "VRC.SDKBase",
+        "VRC.SDKBase.Editor",
+        "com.tp.jp.iwa-sync3-color-changer",
+        "HoshinoLabs.IwaSync3",
+        "HoshinoLabs.IwaSync3.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
