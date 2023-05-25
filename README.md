@@ -18,8 +18,8 @@ vpm add repo https://tp-jp.github.io/vpm-repos/index.json
 ```
 
 VCCから任意のプロジェクトを選択し、「Manage Project」から「Manage Packages」を開きます。
-一覧の中から `LightProbeGenerator` の右にある「＋」ボタンをクリックするか「Installed Vection」から任意のバージョンを選択することで、プロジェクトにインポートします。
-![image](https://github.com/tp-jp/LightProbeGenerator/assets/130125691/790fc4f0-3dd9-43f8-9a2d-317379869bdd)
+一覧の中から `IwaSync3ColorChanger` の右にある「＋」ボタンをクリックするか「Installed Vection」から任意のバージョンを選択することで、プロジェクトにインポートします。
+![image](https://github.com/tp-jp/iwa-sync3-color-changer/assets/130125691/957ef247-86ac-4ebc-9d29-68cd9988f80d)
 
 リポジトリを使わずに導入したい場合は [releases](https://github.com/tp-jp/LightProbeGenerator/releases) から unitypackage をダウンロードして、プロジェクトにインポートしてください。
 
