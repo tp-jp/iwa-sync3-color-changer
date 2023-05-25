@@ -26,8 +26,6 @@ VCCから任意のプロジェクトを選択し、「Manage Project」から「
 ## 使い方
 
 1. ツールバーから `TpLab > IwaSync3ColorChanger` を選択します。  
-![image](https://github.com/tp-jp/iwa-sync3-color-changer/assets/130125691/f716888a-5dbc-496f-8f6f-b19c03431445)
-
 2. 表示されたウィンドウの設定を行い、カラーの変更を行います。  
     - 対象のiwaSync3  
 変更したい iwaSync3 を指定します。
