@@ -1,12 +1,12 @@
 {
   "name": "com.tp.jp.iwa-sync3-color-changer",
   "displayName": "IwaSync3ColorChanger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "unity": "2019.4",
   "description": "Hoshino Labs.\u69d8\u304c\u4f5c\u6210\u3057\u305f iwaSync3 \u306e\u30ad\u30fc\u30ab\u30e9\u30fc\u3092\u4e00\u62ec\u3067\u5909\u66f4\u3067\u304d\u308b\u4fbf\u5229\u30c4\u30fc\u30eb\u3067\u3059\u3002",
   "gitDependencies": {},
   "vpmDependencies": {
-    "com.vrchat.udonsharp": "^1.1.8"
+    "com.vrchat.worlds": ">=3.4.2"
   },
   "legacyFolders": {
     "Assets\\TpLab\\IwaSync3ColorChanger": "002f36334f8817b42a65bc5ae2afc84e"
