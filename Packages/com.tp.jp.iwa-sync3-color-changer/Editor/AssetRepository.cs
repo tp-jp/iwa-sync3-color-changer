@@ -1,6 +1,7 @@
 ﻿using HoshinoLabs.IwaSync3;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -12,9 +13,14 @@ namespace TpLab.IwaSync3ColorChanger.Editor
     public static class AssetRepository
     {
         /// <summary>
+        /// 設定ファイルのPackageパス
+        /// </summary>
+        const string PackagePath = "Packages/com.tp.jp.iwa-sync3-color-changer/Runtime/Setting.asset";
+
+        /// <summary>
         /// 設定ファイルのパス
         /// </summary>
-        const string AssetPath = "Packages/com.tp.jp.iwa-sync3-color-changer/Runtime/Setting.asset";
+        const string AssetPath = "Assets/TpLab/IwaSync3ColorChanger/Setting.asset";
 
         /// <summary>
         /// サポート対象のタイプ一覧
@@ -52,7 +58,9 @@ namespace TpLab.IwaSync3ColorChanger.Editor
         /// <returns>設定</returns>
         public static T LoadSetting<T>() where T : ScriptableObject, new()
         {
-            return AssetDatabase.LoadAssetAtPath<T>(AssetPath) ?? new T();
+            return AssetDatabase.LoadAssetAtPath<T>(AssetPath)
+                   ?? AssetDatabase.LoadAssetAtPath<T>(PackagePath)
+                   ?? new T();
         }
 
         /// <summary>
@@ -61,7 +69,12 @@ namespace TpLab.IwaSync3ColorChanger.Editor
         /// <param name="setting">設定</param>
         public static void SaveSetting<T>(T setting) where T : ScriptableObject
         {
-            if (!AssetDatabase.Contains(setting as UnityEngine.Object))
+            var dir = Path.GetDirectoryName(AssetPath);
+            if (!AssetDatabase.IsValidFolder(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
+            if (!AssetDatabase.Contains(setting))
             {
                 AssetDatabase.CreateAsset(setting, AssetPath);
             }
